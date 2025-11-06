@@ -241,6 +241,21 @@ body.header-hidden {
   margin: 5px 0;
 }
 
+.new-label {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: #e63946;
+  color: white;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
 /* Play button now fits the card width */
 .play-btn {
   background: #007bff; /* bright blue */
