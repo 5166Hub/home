@@ -210,6 +210,22 @@ body.header-hidden {
   padding: 20px;
 }
 
+.new-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff3333; /* bright red */
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  letter-spacing: 0.5px;
+  z-index: 5;
+  pointer-events: none; /* make sure clicks go through it */
+}
+
 /* Each game card */
 .game-card {
   background: var(--panel-bg, #1a1a1a);
@@ -217,6 +233,7 @@ body.header-hidden {
   border-radius: 10px;
   width: 220px;
   padding: 15px;
+  position: relative;
   box-sizing: border-box;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
@@ -239,21 +256,6 @@ body.header-hidden {
 .game-name {
   font-size: 18px;
   margin: 5px 0;
-}
-
-.new-label {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  background: #e63946;
-  color: white;
-  font-weight: bold;
-  font-size: 0.75rem;
-  padding: 4px 8px;
-  border-radius: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 /* Play button now fits the card width */
