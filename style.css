@@ -4,6 +4,7 @@ header nav {
   justify-content: space-between;
   position: relative;
   padding: 0 20px;
+  z-index: 3;
 }
 
 /* Left: page indicator */
@@ -244,6 +245,7 @@ body.header-hidden {
   box-sizing: border-box;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
