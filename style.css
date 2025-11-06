@@ -210,20 +210,27 @@ body.header-hidden {
   padding: 20px;
 }
 
-.new-badge {
+.game-icon-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* The "NEW" label inside the icon area */
+.new-label {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 8px;
+  left: 8px;
   background: #ff3333; /* bright red */
   color: white;
   font-size: 12px;
   font-weight: bold;
-  padding: 4px 8px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  padding: 3px 7px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   letter-spacing: 0.5px;
-  z-index: 5;
-  pointer-events: none; /* make sure clicks go through it */
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* Each game card */
