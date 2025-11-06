@@ -130,7 +130,10 @@ function renderGameCard(container, game) {
   card.className = "game-card";
 
   card.innerHTML = `
-    <img src="${game.icon}" alt="${game.name}" class="game-icon">
+    <div class="game-icon-wrapper">
+      <img src="${game.icon}" alt="${game.name}" class="game-icon">
+      ${game.new ? `<span class="new-label">NEW</span>` : ""}
+    </div>
     <h3 class="game-name">${game.name}</h3>
     <p class="game-desc">${game.description || ""}</p>
     <button class="play-btn">Play</button>
